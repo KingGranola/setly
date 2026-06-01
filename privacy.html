@@ -5,16 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>プライバシーポリシー - Setly</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
-        h1 { font-size: 24px; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px; }
-        h2 { font-size: 20px; margin-top: 30px; }
+        :root {
+            --primary: #2896cc;
+            --primary-strong: #1e78a3;
+            --canvas: #f7f7f7;
+            --surface: #ffffff;
+            --ink: #333333;
+            --muted: #6a6a6a;
+            --line: #ebebeb;
+        }
+        * { box-sizing: border-box; }
+        body {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 28px 20px 48px;
+            background: var(--canvas);
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+        }
+        main {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            background: var(--surface);
+            padding: 28px;
+        }
+        h1 {
+            margin: 0 0 14px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary);
+            color: var(--primary-strong);
+            font-size: 26px;
+        }
+        h2 { font-size: 19px; margin-top: 28px; }
         p, li { font-size: 15px; }
-        .date { color: #666; font-size: 14px; text-align: right; }
+        .date { color: var(--muted); font-size: 14px; text-align: right; }
     </style>
 </head>
 <body>
+<main>
     <h1>プライバシーポリシー</h1>
-    <p class="date">制定日：2026年5月23日 / 最終更新：2026年5月27日</p>
+    <p class="date">制定日：2026年5月23日 / 最終更新：2026年6月1日</p>
     
     <p>Setly（以下、「本アプリ」といいます）は、ユーザーの個人情報について以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます）を定めます。</p>
 
@@ -28,10 +59,13 @@
     <p>本アプリは、ユーザーの同意を得ることなく、個人情報を第三者に提供することはありません。ただし、法令に基づく場合など、正当な理由がある場合を除きます。</p>
 
     <h2>4. 外部サービスの利用</h2>
-    <p>本アプリでは、地図検索・地図プレビューにAppleのMapKitを使用します。ユーザーが会場名や地図検索語を入力・選択した場合、その検索語がAppleの地図サービスで処理される場合があります。また、Apple Maps、Google Maps、Google Calendar、iOS共有シートをユーザー操作で開く場合があります。これらの外部サービスに送信される情報と取り扱いについては、各提供元のプライバシーポリシーをご確認ください。</p>
-
+    <p>本アプリでは、以下の外部サービスを利用する場合があります。これらに送信される情報と取り扱いについては、各提供元のプライバシーポリシーをご確認ください。</p>
+    <ul>
+        <li><strong>地図・位置情報サービス:</strong> 会場名や地図検索語を入力・選択した場合、その検索語がAppleの地図サービスで処理される場合があります。また、Apple Maps、Google Maps等を開く場合があります。</li>
+        <li><strong>アプリ内課金 (StoreKit):</strong> プレミアムプランの決済処理のため、Apple Inc.が提供するStoreKitを使用します。決済処理はApple社によって安全に行われ、開発者がユーザーのクレジットカード情報等を直接取得・保持することはありません。</li>
+    </ul>
     <h2>5. エクスポート・共有</h2>
-    <p>JSON、ZIP、Excel互換CSV、PDF、JPG、画像、クリップボード、共有シートで書き出したデータには、予約者名、連絡先、メモ、フライヤー、譜面リンクなどの情報が含まれる場合があります。書き出したファイルや共有先に保存されたコピーは、ユーザー自身で管理してください。</p>
+    <p>簡易バックアップ（JSON）、Excel互換CSV、PDF、JPG、画像、クリップボード、共有シートで書き出したデータには、予約者名、連絡先、メモ、フライヤー、譜面リンクなどの情報が含まれる場合があります。書き出したファイルや共有先に保存されたコピーは、ユーザー自身で管理してください。簡易バックアップの取り込み対象はJSON形式のテキストデータです。</p>
 
     <h2>6. 免責事項</h2>
     <p>本アプリの利用により生じたトラブルや損害について、開発者は一切の責任を負いかねますのであらかじめご了承ください。</p>
@@ -41,5 +75,6 @@
 
     <h2>8. お問い合わせ窓口</h2>
     <p>本ポリシーに関するお問い合わせは、App Storeのサポートリンクまたは開発者までお願いいたします。</p>
+</main>
 </body>
 </html>
